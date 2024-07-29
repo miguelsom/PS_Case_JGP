@@ -1,0 +1,45 @@
+                            OLS Regression Results
+==============================================================================
+Dep. Variable:      log_CPI_All_Items   R-squared:                       0.951
+Model:                            OLS   Adj. R-squared:                  0.950
+Method:                 Least Squares   F-statistic:                     2277.
+Date:                Sat, 27 Jul 2024   Prob (F-statistic):           5.46e-79
+Time:                        23:10:01   Log-Likelihood:                 307.86
+No. Observations:                 120   AIC:                            -611.7
+Df Residuals:                     118   BIC:                            -606.1
+Df Model:                           1
+Covariance Type:            nonrobust
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+const            1.7483      0.080     21.915      0.000       1.590       1.906
+log_Gasoline     0.5429      0.011     47.719      0.000       0.520       0.565
+==============================================================================
+Omnibus:                       19.495   Durbin-Watson:                   0.039
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):                5.324
+Skew:                          -0.079   Prob(JB):                       0.0698
+Kurtosis:                       1.980   Cond. No.                         333.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+Durbin-Watson: 0.04
+
+Student's t-test for the coefficients:
+               Coefficient  Standard Error    t-value       p-value
+const            1.748313        0.079777  21.915086  2.069944e-43
+log_Gasoline     0.542890        0.011377  47.718870  5.456409e-79
+
+Ljung-Box test for autocorrelation in residuals:
+        lb_stat      lb_pvalue
+12  819.469212  1.104518e-167
+
+ANOVA F-statistic: 8502.517782970375, p-value: 3.082302952868168e-188
+
+Median Log CPI All items: 5.532478006210971
+Median Log Gasoline: 6.9891092400205626
+
+Levene’s test for homogeneity of variances: Statistic=47.24209173171446, p-value=5.459976212461977e-11
+
+Shapiro-Wilk test for Log CPI All items: Statistic=0.869529664516449, p-value=7.203898366725525e-09
+Shapiro-Wilk test for Log Gasoline: Statistic=0.9396650195121765, p-value=4.0640537918079644e-05
