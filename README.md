@@ -1,0 +1,92 @@
+# Inflation Data Analysis Project
+
+## Introduction
+
+    This project involves analyzing U.S. inflation data, focusing on the Consumer Price Index (CPI) for All Items and Gasoline prices. The goal is to understand how changes in Gasoline prices affect overall price levels. The project consists of several tasks, each addressing specific questions and objectives.
+
+## Folder Structure
+
+    - **Outputs & Tests:** Contains all the outputs of the scripts and testing scripts. Each file is prefixed with the corresponding question number.
+
+    - **Question_1:** Contains the script for Question 1, which handles data extraction and transformation.
+
+    - **Question_2:** Contains the script for Question 2, which generates the Plotly chart.
+
+    - **Question_3:** Contains a PDF with the answer to Question 3, detailing how to automate the data extraction process.
+
+    - **Question_4:** Contains a PDF with the answer to Question 4, a detailed analysis with the script output, and the script itself.
+
+    - **Question_Bonus:** Contains the script for the bonus question, implementing the FastAPI application.
+
+    - **PS - Questions.pdf:** Contains the answers to Questions 3 and 4, along with detailed analyses.
+
+
+## Project Structure
+
+    ### Question 1: Data Extraction
+
+        - **Objective:** Obtain U.S. inflation series (CPI) from the Bureau of Labor Statistics (BLS) via API.
+        - **Data Sources:**
+        - CPI All items, seasonally adjusted (CUSR0000SA0)
+        - CPI All items, less food and energy, seasonally adjusted (CUSR0000SA0L1E)
+        - CPI Gasoline (all types), seasonally adjusted (CUSR0000SEGA)
+        - **Output:** Save the processed data in a CSV file (cpi_data.csv) with columns corresponding to the series and rows representing observations over time. 
+
+
+
+
+    ### Question 2: Data Visualization
+
+        - **Objective:** Using Plotly in Python, develop a chart displaying the All items, less food and energy, seasonally adjusted price series with year-over-year percentage variation using the monthly data from 2019 to the present.
+        - **Data Sources:**
+            - cpi_data.csv file
+        - **Output:** A Plotly chart that keeps the frequency monthly.
+
+
+    ### Question 3: Automation Description
+
+        - **Objective:** Describe how to automate the process of extracting the data.
+
+
+    ### Question 4: Relationship Analysis
+
+        - **Objective:** Explain how to relate the price series (All items) with the Gasoline (Gasoline) price series.
+        - **Data Sources:**
+            - cpi_data.csv file
+
+
+    ### Bonus Question: FastAPI Implementation
+
+        - **Objective:** Implement an application using FastAPI to allow requests to the data stored in the CSV file.
+        - **Output:** FastAPI application with endpoints to retrieve the data.
+
+
+
+
+
+## How to Run
+
+    ### Install Dependencies
+        pip install -r requirements.txt
+
+    ## Run code
+        python Question_1/Question_1.py
+        python Question_2/Question_2.py
+        python Question_4/Question_4.py
+        python Question_Bonus/Question_bonus
+
+    ## To test the FastAPI
+        *To run the test it is necessary to install the package uvicorn and add the .exe to the PATH*
+        python Question_Bonus/Question_bonus
+        uvicorn Question_Bonus/Question_bonus:app
+        python "Outputs & Tests"/question_bonus_testing
+
+
+
+## Dependencies
+    -   pandas
+    -   statsmodels
+    -   matplotlib
+    -   fastapi
+    -   uvicorn
+    -   plotly

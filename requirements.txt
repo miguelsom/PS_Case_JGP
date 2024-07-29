@@ -1,0 +1,10 @@
+requests==2.32.3
+pandas==2.2.2
+plotly==5.23.0
+matplotlib-inline==0.1.7
+matplotlib
+statsmodels
+fastapi
+uvicorn
+scipy
+numpy
