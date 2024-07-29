@@ -8,17 +8,9 @@
 
     - **Outputs & Tests:** Contains all the outputs of the scripts and testing scripts. Each file is prefixed with the corresponding question number.
 
-    - **Question_1:** Contains the script for Question 1, which handles data extraction and transformation.
+    - **Codes:** Contains the answers in .py file (not included PDFs answers and tests).  Each file is name after the question and its number.
 
-    - **Question_2:** Contains the script for Question 2, which generates the Plotly chart.
-
-    - **Question_3:** Contains a PDF with the answer to Question 3, detailing how to automate the data extraction process.
-
-    - **Question_4:** Contains a PDF with the answer to Question 4, a detailed analysis with the script output, and the script itself.
-
-    - **Question_Bonus:** Contains the script for the bonus question, implementing the FastAPI application.
-
-    - **PS - Questions.pdf:** Contains the answers to Questions 3 and 4, along with detailed analyses.
+    - **Answer_Case_JGP:** Contains the answers to Questions 3 and 4, along with detailed analysis.
 
 
 ## Project Structure
@@ -70,16 +62,16 @@
         pip install -r requirements.txt
 
     ## Run code
-        python Question_1/Question_1.py
-        python Question_2/Question_2.py
-        python Question_4/Question_4.py
-        python Question_Bonus/Question_bonus
+        python Codes/Question_1.py
+        python Codes/Question_2.py
+        python Codes/Question_4.py
+        python Codes/Question_bonus
 
     ## To test the FastAPI
         *To run the test it is necessary to install the package uvicorn and add the .exe to the PATH*
-        python Question_Bonus/Question_bonus
-        uvicorn Question_Bonus/Question_bonus:app
-        python "Outputs & Tests"/question_bonus_testing
+        python Codes/Question_bonus
+        uvicorn Codes/Question_bonus:app
+        python Outputs_&_Tests/question_bonus_testing
 
 
 
@@ -90,3 +82,5 @@
     -   fastapi
     -   uvicorn
     -   plotly
+    -   scipy
+    -   numpy
